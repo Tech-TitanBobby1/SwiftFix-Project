@@ -46,3 +46,51 @@ button:focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 4px;
 }
+
+/* Logo and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* SwiftFix logo */
+header > a {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Navigation links */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #1e293b;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Stack the header on smaller screens */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 16px;
+  }
+}
