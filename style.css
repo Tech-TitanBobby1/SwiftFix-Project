@@ -1,0 +1,48 @@
+/* Include padding and borders in element sizes */
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth movement when navigation links are clicked */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General page appearance */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Space inside each section */
+section {
+  padding: 60px 8%;
+}
+
+/* Main heading */
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+/* Section headings */
+h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Show keyboard users which link or button is selected */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 4px;
+}
