@@ -192,3 +192,44 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* About section */
+#about {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: #475569;
+}
+
+/* Why Choose Us section */
+#why-choose-us h2 {
+  text-align: center;
+}
+
+#why-choose-us ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 30px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+#why-choose-us li {
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+}
+
+/* One column on smaller screens */
+@media (max-width: 600px) {
+  #why-choose-us ul {
+    grid-template-columns: 1fr;
+  }
+}
