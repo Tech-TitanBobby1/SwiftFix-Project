@@ -152,7 +152,73 @@
         </p>
       </details>
     </section>
-    </main>
+
+     <!-- 8. Contact and booking form -->
+    <section id="contact">
+      <h2>Book a Repair</h2>
+
+      <p>Tell us about your device using the form below.</p>
+
+      <!-- This form needs a backend or form service to send messages. -->
+      <form>
+        <div>
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            autocomplete="tel"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="device">Device Type</label>
+          <select id="device" name="device" required>
+            <option value="">Select your device</option>
+            <option value="phone">Phone</option>
+            <option value="laptop">Laptop</option>
+            <option value="tablet">Tablet</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Describe the Problem</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Include your device brand, model and the issue."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Repair Request</button>
+      </form>
+    </section>
+  </main>
     </body>
 </body>
 </html>
