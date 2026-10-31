@@ -396,3 +396,11 @@ footer a {
   margin-top: 12px;
   color: #93c5fd;
 }
+
+#form-message {
+  max-width: 600px;
+  margin: 20px auto 0;
+  color: #1e40af;
+  font-weight: bold;
+  text-align: center;
+}
